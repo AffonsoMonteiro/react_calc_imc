@@ -43,7 +43,7 @@ export function App() {
           <button onClick={handleCalculateButton}>Calcular</button>
         </div>
         <div className={styles.rightSide}>
-          RWightSide
+          RightSide
         </div>
       </div>
     </div>
