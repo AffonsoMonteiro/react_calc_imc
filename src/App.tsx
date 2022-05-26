@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { levels, calculateImc } from './helpers/imc'
+
 import poweredImage from './assets/powered.png'
 import styles from './App.module.css';
 
@@ -43,7 +45,11 @@ export function App() {
           <button onClick={handleCalculateButton}>Calcular</button>
         </div>
         <div className={styles.rightSide}>
-          RightSide
+          <div className={styles.grid}>
+            {levels.map((item, key) => (
+              <div key={key}> {item.title} </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
